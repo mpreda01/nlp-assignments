@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "nlp-project"
+version = "0.1.0"
+description = "Natural Language Processing project."
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.12.0",
+    "bitsandbytes>=0.49.0",
+    "huggingface-hub",
+    "ipykernel>=7.1.0",
+    "transformers>=4.57.3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "nbstripout>=0.8.2",
+    "ruff>=0.14.10",
+    "zizmor>=1.20.0",
+]
+
