@@ -4,7 +4,7 @@
 if ! command -v nbstripout &>/dev/null; then
   echo "Error: nbstripout is not installed"
   echo "Please install it along with other dev dependencies via"
-  echo "pip install .[dev]"
+  echo "pip install -r requirements-dev.txt"
   exit 1
 fi
 
