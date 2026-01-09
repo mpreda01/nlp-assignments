@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "nlp-project"
+version = "0.1.0"
+description = "Natural Language Processing assignments on sexism detection."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "nbstripout>=0.8.2",
+    "ruff>=0.14.10",
+    "zizmor>=1.20.0",
+]
+assignment1 = [
+    "datasets>=4.4.2",
+    "evaluate>=0.4.6",
+    "huggingface-hub>=0.36.0",
+    "ipykernel>=7.1.0",
+    "matplotlib>=3.10.8",
+    "nltk>=3.9.2",
+    "numpy>=2.4.0",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.8.0",
+    "tensorflow>=2.20.0",
+    "torch>=2.9.1",
+    "tqdm>=4.67.1",
+    "transformers>=4.57.3",
+    "wandb>=0.23.1",
+]
+assignment2 = [
+    "accelerate>=1.12.0",
+    "bitsandbytes>=0.49.1",
+    "hf-transfer>=0.1.9",
+    "huggingface-hub>=0.36.0",
+    "ipykernel>=7.1.0",
+    "pandas>=2.3.3",
+    "scikit-learn>=1.8.0",
+    "torch>=2.9.1",
+    "tqdm>=4.67.1",
+    "transformers>=4.57.3",
+]
