@@ -29,6 +29,7 @@ assignment1 = [
     "pandas>=2.3.3",
     "scikit-learn>=1.8.0",
     "tensorflow>=2.20.0",
+    "tf-keras>=2.20.1",
     "torch>=2.9.1",
     "tqdm>=4.67.1",
     "transformers>=4.57.3",
