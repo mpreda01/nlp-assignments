@@ -5,11 +5,25 @@ This repository contains the solution to the 2 assignments for the [course](http
 
 ---
 
-## Development dependencies
+## Setup
 
-Dev dependencies can be installed in the local virtual environment by running:
 ```sh
-(.venv) pip install -r requirements-dev.txt
+# Clone repository
+git clone https://github.com/mpreda01/nlp-assignments
+cd nlp-assignments
+
+# Create virtual environment
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install ".[assignment1]"      # Assignment 1
+pip install ".[assignment2]"      # Assignment 2
+pip install ".[dev]"              # dev tools
+# Or with uv:
+uv sync --extra assignment1       # Assignment 1
+uv sync --extra assignment2       # Assignment 2
+uv sync --extra dev               # With dev tools
 ```
 
 ### License
